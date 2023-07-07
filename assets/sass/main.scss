@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
+  background-color: #363636;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text-animation {
+  font-size: 6rem;
+  background-color: rgba(130, 207, 107, 0.2);
+  color: #0cdb4a;
+  display: inline-block;
+  padding: 2rem 1.4rem;
+  border-right: 12px solid transparent;
+  text-transform: uppercase;
+  position: absolute;
+  left: 20px;
+
+  animation: flicker 1s linear infinite;
+}
+
+@keyframes flicker {
+  0% {
+    border-right: 12px solid transparent;
+  }
+  20% {
+    border-right: 12px solid #0cdb4a;
+  }
+}
