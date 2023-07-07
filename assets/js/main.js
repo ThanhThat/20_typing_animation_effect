@@ -1,6 +1,6 @@
 const textAnimate = document.querySelector(".text-animation");
 let index = 0;
-const str = "Thành Thật - Learning Developer";
+const str = "Thành Thật - Development Learning";
 
 function typingStr() {
   if (index <= str.length) {
